@@ -1,6 +1,8 @@
 Documentation docker container
 ==
 
+A docker container that hosts current documentation of your working project. Using [sami](https://github.com/FriendsOfPHP/Sami).
+
 ARG DOCUMENTATION_NAME[='*.php']  
 ARG DOCUMENTATION_EXCLUDES[='']  
 ARG DOCUMENTATION_DIR[='/var/www']  

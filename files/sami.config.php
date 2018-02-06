@@ -19,7 +19,7 @@ foreach ($excludes as $exclude) {
     $iterator->exclude($exclude);
 }
 
-$iterator->in($dir = getenv('DOCUMENTATION_DIR', ''));
+$iterator->in($dir = getenv('DOCUMENTATION_DIR', '/var/project/'));
 
 return new Sami($iterator, [
     'theme' => getenv('DOCUMENTATION_THEME', 'default'),
