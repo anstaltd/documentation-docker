@@ -32,7 +32,7 @@ services:
             - ./:/var/project
         ports:
             - 80:80
-        args: 
+        environment: 
             DOCUMENTATION_GITHUB: account/project
             DOCUMENTATION_EXCLUDES: 'vendor'
 ```
@@ -40,7 +40,8 @@ services:
 ## Updating documentation 
 
 ```bash
-docker exec -it $(docker ps -q) updatedocs
+docker exec -it $(docker ps -q) bash
+root:/var/www# updatedocs
 ```
 
 
