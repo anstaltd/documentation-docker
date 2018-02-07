@@ -19,7 +19,7 @@ ENV DOCUMENTATION_GITHUB=$DOCUMENTATION_GITHUB
 ENV DOCUMENTATION_OPENED_LEVEL=$DOCUMENTATION_OPENED_LEVEL
 
 RUN mkdir /sami
-RUN mkdir /var/project
+RUN mkdir $DOCUMENTATION_DIR
 
 ADD files/sami.config.php /sami/sami.config.php
 ADD files/.bash_profile /root/.bash_profile
