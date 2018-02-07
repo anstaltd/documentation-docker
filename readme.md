@@ -27,13 +27,14 @@ services:
 
     documentation:
         image: ansta/php-documentation:latest
-        name: mysite-documenation
+        name: mysite_documenation
         volumes:
             - ./:/var/project
         ports:
             - 80:80
         args: 
             DOCUMENTATION_GITHUB: account/project
+            DOCUMENTATION_EXCLUDES: 'vendor'
 ```
 
 ## Updating documentation 
