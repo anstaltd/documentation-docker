@@ -50,7 +50,7 @@ variable | for | default
 DOCUMENTATION_NAME | The file names to include | *.php
 DOCUMENTATION_EXCLUDES | The directories to exclude | 
 DOCUMENTATION_DIR | Your project's mounting directory | /var/project
-DOCUMENTATION_THEME | The sami theme | 
+DOCUMENTATION_THEME | The sami theme | default
 DOCUMENTATION_BUILD_DIR | The output directory | /var/www
 DOCUMENTATION_GITHUB | If provided, sami will link to github | 
 DOCUMENTATION_OPENED_LEVEL | | 2
